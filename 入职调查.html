@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>入职调查</title>	
+	</head>
+		<style>
+			*{
+				margin: 0;
+				padding:0;
+			}
+			html{
+				width: 100%;
+				background: #f5f5f5;
+				}			
+			#header{
+				height: 100px;
+				background: #00a3ed;
+				width: 100%;
+			}
+			#main{
+				height: 1100px;
+				width: 100%;
+			}
+			#main-top{
+				height: 100px;
+				background: white;
+				width: 750px;
+				margin: 50px auto 30px auto;
+				
+			}
+			#main-bottom{
+				width: 750px;
+				background: white;
+				height: 800px;
+				margin: auto;
+			}
+			#main-down{
+				background: #f5f5f5;
+				height: 100px;
+			}
+			#footer{
+				background: #f5f5f5;
+				height:150px;
+			}
+			.inputtext{
+				width: 700px;
+				height: 500px;
+			}
+			p {
+				width: 430px;
+				height: 40px;
+			}
+			label {
+				display: inline-block;
+				width: 120px;
+				float：left;
+				text-align: right;
+				padding: 3px 0px 0px 0px;
+			}
+			.orher{
+				float: right;
+				width: 300px;
+				height: 25px;
+			}
+			#waikuang{
+				padding-top: 120px;
+
+			}
+			#submit{
+				padding-right: 150px;
+    			padding-top: 160px;
+    			float: right;
+
+			}
+			#submitpic{
+				width:100px; 
+				height:50px;
+			}
+		</style>
+
+
+	<body>
+	<div id="header">
+		
+	</div>
+	<div id="main">
+		<div id="main-top">
+			<h1 style="text-align:center;font-family:楷体;padding:30px;">大	喵	前	端	入	职	调	查</h1>
+		</div>
+		<div id="main-bottom">
+			<h2 style="font-family:微软雅黑;padding:20px 100px;">个人信息
+			</h2>
+				<form target="_blank"action="www.daoyue.online" method="get">
+					<span style="float: right">
+					请上传白底免冠一寸照<br/>如：
+						<img src="./pic/egphotos.jpg"
+					style="width:100px;height:150px;"><br/>
+						<input type="file" name="photo"accept="image/*">
+					</span>
+				</form>
+				<form   id="inputtext"target="_blank"action="www.daoyue.online" method="get"name="from1">
+				<div id="waikuang">
+				<p>
+					<label for="name">姓名</label>
+					<input class="orher" type="text"required="required"name="name">
+				</p>
+				<p>
+					<label for="sex">性别</label>&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="sex" value="male" checked>Male&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="sex" value="female">Female
+				</p>
+				<p>
+					<label for="bith">出生日期</label>
+					<input class="orher" type="date"required="required" max="2000-3-21"min="1980-03-21"name="bath">
+				</p>
+				<p>
+					<label for="tel">联系方式</label>
+					<input class="orher" type="tel"name"usrtel"required="required">
+				</p>
+				<p>
+					<label for="email">电子邮箱</label>
+					<input class="orher" type="email"required="required"name="email">
+				</p>
+				<p>
+					<label for="IDNum">ID Card N.</label>
+					<input class="orher" type="number"required="required"name="IDNum">
+				<p>
+					<label for="jotime">入职时间</label>
+					<input class="orher" type="date"required="required" max="2017-3-21"	min="2010-03-21"name="jobtime">
+				</p>						
+			</div>
+			<span id="submit">
+			<input id="submitpic"type="image" src="./pic/next.png" onclick="from1.submit" />
+			</span>
+			</form>
+		</div>
+		<div id="main-down"></div>
+		<div id="footer">
+			<hr/>
+		</div>
+	</body>
+</html>
